@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Main.module.scss";
 
 import { Poster } from "./index";
+import { Gallery } from "../Carousel";
 
 // передача стилей через внешний объект и состояния добавачного
 export class Main extends React.Component {
@@ -19,7 +20,7 @@ export class Main extends React.Component {
       <div className={styles.bg}>
         <Poster />
 
-        {/* <Gallery /> */}
+        <Gallery />
       </div>
     );
   }

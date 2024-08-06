@@ -2,7 +2,7 @@ import React from "react";
 import { Main } from "./components/index.jsx";
 import Layout from "./components/Layout.jsx";
 import { Route, Routes } from "react-router-dom";
-// import { SearchBlock } from "./components/SearchBlock/SearchBlock.jsx";
+import { SearchBlock } from "./components/SearchBlock/SearchBlock.jsx";
 import { fetchSearchMovie } from "./helpers/fetch.js";
 
 export class App extends React.Component {
@@ -38,7 +38,7 @@ export class App extends React.Component {
             }
           >
             <Route path="/" element={<Main />} />
-            {/* <Route
+            <Route
               path="/search"
               element={
                 <SearchBlock
@@ -46,7 +46,7 @@ export class App extends React.Component {
                   films={this.state.films}
                 />
               }
-            /> */}
+            />
           </Route>
         </Routes>
       </div>
