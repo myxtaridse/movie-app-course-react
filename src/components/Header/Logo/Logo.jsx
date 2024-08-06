@@ -8,7 +8,7 @@ export const Logo = () => {
     <div className={styles.logo}>
       <Link to="/">
         {" "}
-        <img src={logo} />
+        <img src={logo} alt="logo" />
       </Link>
     </div>
   );

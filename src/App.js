@@ -4,7 +4,6 @@ import Layout from "./components/Layout.jsx";
 import { Route, Routes } from "react-router-dom";
 import { SearchBlock } from "./components/SearchBlock/SearchBlock.jsx";
 import { fetchSearchMovie } from "./helpers/fetch.js";
-import { films } from "./assets/films.js";
 
 export class App extends React.Component {
   constructor() {

@@ -35,6 +35,7 @@ export class SearchMovie extends React.Component {
                 ? this.props.item.Poster
                 : "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
             }
+            alt="poster"
           />
         </div>
         <div className={styles.block__about}>
@@ -78,6 +79,7 @@ export class SearchMovie extends React.Component {
           </div>
           <a
             target="_blank"
+            rel="noreferrer"
             href={`https://www.imdb.com/title/${this.state.plot.imdbID}/`}
           >
             Больше информации...

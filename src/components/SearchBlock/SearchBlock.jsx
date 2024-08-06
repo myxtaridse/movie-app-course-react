@@ -3,10 +3,6 @@ import SearchMovie from "../SearchMovie/SearchMovie";
 import styles from "./SearchBlock.module.scss";
 
 export class SearchBlock extends React.Component {
-  constructor(props) {
-    super(props);
-    // console.log(this.props);
-  }
   render() {
     return (
       <div className={styles.search}>

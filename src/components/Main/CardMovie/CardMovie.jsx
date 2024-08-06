@@ -34,7 +34,7 @@ export class CardMovie extends React.Component {
 
   render() {
     return (
-      <a target="_blank" href={this.props.url}>
+      <a target="_blank" rel="noreferrer" href={this.props.url}>
         <div
           onMouseMove={this.infoShow}
           onMouseOut={this.infoNotShow}

@@ -5,9 +5,6 @@ import { films } from "../assets/films";
 import { CardMovie } from "./Main";
 
 export class Gallery extends React.Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <div style={{ margin: "80px 0 100px 0" }}>
