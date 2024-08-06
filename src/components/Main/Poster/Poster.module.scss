@@ -1,0 +1,71 @@
+.poster {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://vlkino.ru/upload/demo.adminhelper/270/27072cd2ae6fcf8b1a4ca9925fb87ec4.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    filter: contrast(50%);
+  }
+
+  &__image {
+    margin-left: -5vw;
+    width: 110vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    position: absolute;
+    bottom: 120px;
+    left: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+
+    &__img1 {
+      width: 600px;
+    }
+    &__img2 {
+      width: 700px;
+    }
+    div {
+      color: white;
+      font-size: 24px;
+      margin: 5px 10px;
+    }
+    &__detalies {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &__btns {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      button {
+        font-size: 20px;
+        background-color: #4c392b;
+        padding: 10px 20px;
+        //   border: 1px solid black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+      a {
+        color: #f1ebee;
+      }
+    }
+  }
+}

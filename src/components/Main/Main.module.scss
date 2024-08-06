@@ -1,0 +1,27 @@
+.bg {
+  width: 100vw;
+  height: max-content;
+
+  &__cards {
+    margin-top: 50px;
+
+    position: relative;
+    height: 500px;
+    margin-bottom: 100px;
+
+    &__position {
+      position: absolute;
+      top: 0;
+      left: 100px;
+      width: calc(100vw * (13 / 4));
+      display: flex;
+    }
+    &__arrow {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: 60px;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.block {
+  position: relative;
+  &__user {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background-color: #cab4a0;
+    border: 1px solid #f1ebee;
+  }
+  &__bell {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 35px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f1ebee;
+    color: #5a371b;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

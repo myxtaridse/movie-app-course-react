@@ -1,0 +1,52 @@
+.search {
+  margin-left: -50px;
+  &__div {
+    padding: 40px;
+    width: 26px;
+  }
+  &__block {
+    &__input {
+      display: inline-block;
+      position: relative;
+      filter: drop-shadow(0 1px #f1ebee);
+
+      input {
+        margin-top: -5px;
+        color: white;
+        font-size: 16px;
+        background: transparent;
+        width: 5px;
+        height: 5px;
+        padding: 10px;
+        border: solid 2px #f1ebee;
+        outline: none;
+        border-radius: 35px;
+        transition: width 0.5s;
+        font-family: "Bellota Text", sans-serif;
+      }
+      input::placeholder {
+        color: #efefef;
+        opacity: 0;
+        transition: opacity 150ms ease-out;
+      }
+      input:focus::placeholder {
+        opacity: 1;
+      }
+      input:focus,
+      input:not(:placeholder-shown) {
+        width: 255px;
+        height: 15px;
+      }
+      &__after {
+        content: "";
+        background: #f1ebee;
+        width: 2px;
+        height: 10px;
+        position: absolute;
+        top: 18px;
+        right: -1px;
+        transform: rotate(135deg);
+      }
+    }
+  }
+}

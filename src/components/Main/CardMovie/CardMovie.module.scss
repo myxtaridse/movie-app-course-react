@@ -1,0 +1,110 @@
+.card {
+  width: calc(95vw / 5);
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  position: relative;
+
+  &__image {
+    position: relative;
+
+    &__bg {
+      position: absolute;
+      background-color: #dbc8b73d;
+      width: 100%;
+      height: 500px;
+    }
+    img {
+      // width: calc((80vw / 4));
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    background: linear-gradient(
+      #0000000c 0%,
+      #00000028 10%,
+      #00000060 20%,
+      #00000080 40%,
+      #0000009c 60%,
+      #0000009c 80%,
+      #0000009c 100%
+    );
+    width: calc(90vw / 5);
+
+    height: 500px;
+    position: absolute;
+    bottom: -2%;
+    left: 2.5%;
+    animation: opac 1s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    h3 {
+      font-size: 36px;
+      text-align: center;
+    }
+    &__detalies {
+      margin: 20px 20px 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    &__description {
+      margin: 20px 20px 40px 20px;
+      text-align: justify;
+      // height: max-content;
+      // max-height: 250px;
+      // position: relative;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      // display: -moz-box;
+      // -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      line-clamp: 10;
+      box-orient: vertical;
+    }
+    // &__description::after {
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   content: "";
+    //   width: 100%;
+    //   height: 50px;
+    //   background: linear-gradient(
+    //     #0000004b 0%,
+    //     #000 20%,
+    //     #000 40%,
+    //     #000 60%,
+    //     #000 80%,
+    //     #000 100%
+    //   );
+    // }
+    &__more {
+      opacity: 0.8;
+
+      &:hover {
+        color: #b0785c;
+        opacity: 1;
+      }
+    }
+  }
+  @keyframes opac {
+    0% {
+      opacity: 0;
+      bottom: -100px;
+    }
+    100% {
+      opacity: 1;
+      bottom: -2%;
+    }
+  }
+}
